@@ -1,0 +1,12 @@
+O Projeto foi criado na IDE de desenvolvimento Visual Studio 2013 e o plugin DevExpress versão 13.2. (https://mega.nz/file/V053HSzZ#rBwm-VlNWhc_MVSq3_PoEa28X3H54HkJBiK6q6h7G7k)
+Dessa forma o aplicativo somente irá funcionar em ambiente Windows.
+Para armazenar as informações foi utilizado o banco de dados PostgreSql, no qual pode estar em um ambiente Linux.
+Executar os arquivos:
+•	1 - CriaBancoEUsuario.sql Ele irá criar o banco de dados, e o usuário e senha utilizado polo sistema.
+•	2 - CriaTabelasBanco.sql, cria as tabelas e as suas estruturas.
+•	3 - InsertInicial.sql, irá inserir os registros inicias, para a utilização do sistema.
+O sistema irá utilizar o arquivo Config.xml. Nesse arquivo contém a conexão com o banco de dados e outras informações utilizada pelo sistema.
+As tags nmUsuario e snUsuario estão criptografas, por tanto se tentar informar outra informação o sistema não irá funcionar.
+Sobre os usuários:
+•	ADM permissão total.
+•	1 somente acesso a tela de cadastro e relatório.

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/19/2020 13:16:20" ReportInfo.Modified="08/19/2020 17:40:53" ReportInfo.CreatorVersion="1.4.18.0">
+  <Dictionary>
+    <TableDataSource Name="tabClienteContato" ReferenceName="tabClienteContato" DataType="System.Int32" Enabled="true">
+      <Column Name="cliente_cd_cliente" DataType="System.Int32"/>
+      <Column Name="clientecontato_cd_contato" DataType="System.Int32"/>
+      <Column Name="cliente_ds_nome" DataType="System.String"/>
+      <Column Name="cliente_nr_telefone" DataType="System.String"/>
+      <Column Name="cliente_nr_celular" DataType="System.String"/>
+      <Column Name="cliente_nr_celular2" DataType="System.String"/>
+      <Column Name="cliente_ds_email" DataType="System.String"/>
+      <Column Name="clientecontato_ds_contato" DataType="System.String"/>
+      <Column Name="clientecontato_nr_telefone" DataType="System.String"/>
+      <Column Name="clientecontato_nr_celular" DataType="System.String"/>
+      <Column Name="clientecontato_nr_celular2" DataType="System.String"/>
+      <Column Name="clientecontato_ds_email" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="18.9">
+      <TextObject Name="Text1" Width="718.2" Height="18.9" Border.Lines="Top, Bottom" Text="Relatório de Cliente e Contatos" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="22.02" Width="718.2" Height="56.7" Border.Lines="Top" Condition="[tabClienteContato.cliente_cd_cliente]" SortOrder="None">
+      <TextObject Name="Text2" Top="18.9" Width="75.6" Height="18.9" Text="Cliente:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Top="37.8" Width="75.6" Height="18.9" Text="Telefone:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text5" Left="340.2" Top="18.9" Width="94.5" Height="18.9" Text="E-mail" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="245.7" Top="37.8" Width="66.15" Height="18.9" Text="Celular:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text7" Left="75.6" Top="18.9" Width="264.6" Height="18.9" Text="[tabClienteContato.cliente_ds_nome]" VertAlign="Center"/>
+      <TextObject Name="Text8" Left="434.7" Top="18.9" Width="283.5" Height="18.9" Text="[tabClienteContato.cliente_ds_email]" VertAlign="Center"/>
+      <TextObject Name="Text9" Left="75.6" Top="37.8" Width="170.1" Height="18.9" Text="[tabClienteContato.cliente_nr_telefone]" VertAlign="Center"/>
+      <TextObject Name="Text10" Left="311.85" Top="37.8" Width="122.85" Height="18.9" Text="[tabClienteContato.cliente_nr_celular]" VertAlign="Center"/>
+      <TextObject Name="Text11" Left="434.7" Top="37.8" Width="75.6" Height="18.9" Text="Celular 2:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text12" Left="510.3" Top="37.8" Width="207.9" Height="18.9" Text="[tabClienteContato.cliente_nr_celular2]" VertAlign="Center"/>
+      <TextObject Name="Text24" Width="718.2" Height="18.9" Border.Lines="Top, Bottom" Text="Cliente" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <DataBand Name="Data1" Top="103.88" Width="718.2" Height="40.92" DataSource="tabClienteContato">
+        <TextObject Name="Text14" Top="3.12" Width="75.6" Height="18.9" Text="Contato:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text15" Top="22.02" Width="75.6" Height="18.9" Text="Telefone:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text16" Left="340.2" Top="3.12" Width="94.5" Height="18.9" Text="E-mail" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text17" Left="245.7" Top="22.02" Width="66.15" Height="18.9" Text="Celular:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text18" Left="75.6" Top="3.12" Width="264.6" Height="18.9" Text="[tabClienteContato.clientecontato_ds_contato]" VertAlign="Center"/>
+        <TextObject Name="Text19" Left="434.7" Top="3.12" Width="283.5" Height="18.9" Text="[tabClienteContato.clientecontato_ds_email]" VertAlign="Center"/>
+        <TextObject Name="Text20" Left="75.6" Top="22.02" Width="170.1" Height="18.9" Text="[tabClienteContato.clientecontato_nr_telefone]" VertAlign="Center"/>
+        <TextObject Name="Text21" Left="311.85" Top="22.02" Width="122.85" Height="18.9" Text="[tabClienteContato.clientecontato_nr_celular]" VertAlign="Center"/>
+        <TextObject Name="Text22" Left="434.7" Top="22.02" Width="75.6" Height="18.9" Text="Celular 2:" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text23" Left="510.3" Top="22.02" Width="207.9" Height="18.9" Text="[tabClienteContato.clientecontato_nr_celular2]" VertAlign="Center"/>
+        <DataHeaderBand Name="DataHeader1" Top="81.85" Width="718.2" Height="18.9">
+          <TextObject Name="Text3" Width="718.2" Height="18.9" Border.Lines="Top, Bottom" Text="Contatos" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        </DataHeaderBand>
+      </DataBand>
+    </GroupHeaderBand>
+  </ReportPage>
+</Report>

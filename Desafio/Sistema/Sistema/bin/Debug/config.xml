@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<connections>
+  <server>localhost</server>
+  <dbName>mydb</dbName>
+  <nmUsuario>o49c0iaFIdIhRFHcivtuQA==</nmUsuario>
+  <snUsuario>cfI0cv+DfZe6CIz2aYyEp5tEfSC3vIDC</snUsuario>
+  <tpUser>C</tpUser>
+  <nrPorta>5432</nrPorta>
+  <nmSkin>DevExpress Style</nmSkin>  
+  <imagemFundo>true</imagemFundo>
+</connections>
